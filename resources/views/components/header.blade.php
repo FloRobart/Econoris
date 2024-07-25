@@ -3,7 +3,7 @@
     <div class="rowBetweenContainer">
         <!-- Logo + lien vers la page d'accueil -->
         <div class="smallRowCenterContainer mx-6 min-[400px]:mx-14">
-            <a href="{{ route('accueil.general') }}" class="logo">
+            <a href="{{ route('accueil') }}" class="logo">
                 <img class="w-20 sm:w-28" src="{{ asset('img/logo/logo_white.png') }}" alt="Logo">
             </a>
         </div>
@@ -58,6 +58,9 @@
             {
                 $breadcrumb = [
                     /* Niveau 1 */
+                    'connexion' => route('login'),
+                    'inscription' => route('inscription'),
+                    'profil' => route('profil'),
                     'salaires' => route('salaires'),
                     'epargnes' => route('epargnes'),
                     'investissements' => route('investissements'),
@@ -99,8 +102,7 @@
 
         <div id="breadcrumb" class="rowStartContainer px-4 min-[550px]:px-6 sm:px-14">
             <!-- Accueil -->
-            <a href="{{ route('accueil.general') }}" class="tinyTextReverse sm:smallTextReverse">Accueil</a>
-            <livewire:breadcrumb-link name="Tableau de bord des finances" link="{{ route('accueil') }}" />
+            <a href="{{ route('accueil') }}" class="tinyTextReverse sm:smallTextReverse">Accueil</a>
 
             @foreach ($breadcrumb as $key => $value)
                 @if (str_contains(strtolower($urlPath), $key))
