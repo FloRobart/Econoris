@@ -54,7 +54,7 @@ class ProfilController extends Controller
         ]);
 
         /* Récupération des informations du formulaire */
-        $name = $request->name;
+        $name = ucfirst($request->name);
         $email = $request->email;
         $password = Hash::make($request->password);
         $extension = $request->profil_image->getClientOriginalExtension();
@@ -176,7 +176,7 @@ class ProfilController extends Controller
         ]);
 
         /* Vérification des informations du formulaire */
-        $name = $request->name;
+        $name = ucfirst($request->name);
         $email = $request->email;
 
         /* Enregistrement des informations dans la base de données */
@@ -262,6 +262,12 @@ class ProfilController extends Controller
         /* Récupération des informations de l'utilisateur */
         $user = User::find(Auth::user()->id);
 
+        /* Suppression de l'image de profil */
+        $imageName = 'profil_image_' . $user->id . '.' . $user->image_extention;
+        if (Storage::disk('public')->exists('profil_image/' . $imageName)) {
+            Storage::disk('public')->delete('profil_image/' . $imageName);
+        }
+
         /* Déconnexion de l'utilisateur */
         Auth::logout();
 
@@ -272,6 +278,6 @@ class ProfilController extends Controller
         User::destroy($user->id);
 
         /* Redirection vers la page d'accueil */
-        return Redirect('accueil');
+        return Redirect()->route('accueil');
     }
 }
