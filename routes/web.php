@@ -4,6 +4,11 @@ use App\Http\Controllers\PrivateController;
 use App\Http\Controllers\ResetPasswordController;
 use Illuminate\Support\Facades\Route;
 
+/*
+ * Ce fichier fait partie du projet Finance Dashboard
+ * Copyright (C) 2024 Floris Robart <florisrobart.pro@gmail.com>
+ */
+
 
 
 /*---------------------------------*/

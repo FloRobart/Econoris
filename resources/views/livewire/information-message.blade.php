@@ -1,3 +1,8 @@
+{{--
+Ce fichier fait partie du projet Finance Dashboard
+Copyright (C) 2024 Floris Robart <florisrobart.pro@gmail.com>
+--}}
+
 <div class="colCenterContainer">
     @if (session()->has('error'))
         <div class="rowCenterContainer">

@@ -1,3 +1,8 @@
+{{--
+Ce fichier fait partie du projet Finance Dashboard
+Copyright (C) 2024 Floris Robart <florisrobart.pro@gmail.com>
+--}}
+
 <div class="smallRowStartContainer">
     <span class="tinyTextReverse sm:smallTextReverse mx-2">></span>
     <div class="smallColStartContainer">
