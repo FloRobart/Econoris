@@ -41,7 +41,7 @@ Copyright (C) 2024 Floris Robart <florisrobart.pro@gmail.com>
             <div class="pb-20">
                 <div class="smallColCenterContainer gap-y-6">
                     <div class="shrink-0">
-                        <img id='preview_img' class="bigIcons object-cover rounded-xl" src="{{ asset('storage/profil_image/profil_image_' . auth()->user()->id . '.' . auth()->user()->image_extention) }}" alt="Photo de profil" />
+                        <img id='preview_img' class="bigIcons object-cover rounded-xl" src="data:image/png;base64,{{ auth()->user()->imgProfil }}" alt="Photo de profil" />
                         <span class="sr-only">Photo de profil</span>
                     </div>
                     <input type="file" id="profil_image" name="profil_image" accept="image/*" autocomplete="off" onchange="loadFile(event)" class="block w-fot font fontSizeSmall colorFont file:text-white mt-4 md:mt-0 file:py-2 file:px-5 file:rounded-full file:border-0 file:bg-[#3232FF] hover:file:bg-[#0000CC] hover:file:cursor-pointer focus:file:scale-105"/>

@@ -37,7 +37,7 @@ Copyright (C) 2024 Floris Robart <florisrobart.pro@gmail.com>
                     <button onclick="password_modal('{{ $profil->email }}')" id="profil_{{ $profil->id }}" class="smallColCenterContainer group gap-y-2">
                         <div class="smallColCenterContainer bg-white rounded-xl overflow-hidden shadow-lg w-36 h-36 min-[400px]:w-44 min-[400px]:h-44 lg:w-52 lg:h-52 xl:w-72 xl:h-72">
                             <div class="flex justify-center items-center group-hover:bigScale">
-                                <img class="rounded-xl" src="{{ asset('storage/profil_image/profil_image_' . $profil->id . '.' . $profil->image_extention) }}" alt="Photo de profil">
+                                <img class="rounded-xl" src="data:image/png;base64,{{ auth()->user()->imgProfil }}" alt="Photo de profil">
                             </div>
                         </div>
                         <span class="w-full smallText text-center group-hover:text-[#5B1010] font-bold">{{ $profil == null ? 'Ajouter un profil' : $profil->name }}</span>
