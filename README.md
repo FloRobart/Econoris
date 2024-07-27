@@ -62,8 +62,10 @@ Pour installer **Finance dashboard** sur votre serveur, vous devez avoir les pr�
 ### Installation complète
 
 - [Installer Home Server Maison]()
+- [Lancer Home Server Maison]()
 - [Installer Finance dashboard]()
 - Copier le fichier `.env.example` dans le fichier `.env`
+- Remplacer `<nom_de_la_base_de_données>` par le nom que vous voulez donner à la base de données de **Finance dashboard**.
   - Vous pouvez modifier le nom de la base de données, le nom d'utilisateur et le mot de passe dans le fichier `.env` pour s'adapter à votre configuration. Si vous avez laissé les valeurs par défaut lors de l'installation de XAMPP, vous n'avez pas besoin de modifier le fichier `.env`.
 - Créer les base de données
 
@@ -75,6 +77,8 @@ Pour installer **Finance dashboard** sur votre serveur, vous devez avoir les pr�
 - Modifier le fichier `routes/web.php` pour remplacer <IP Home Server Maison> pour l'adresse IP et le port de votre serveur Home Server Maison
   - Par exemple, si votre serveur Home Server Maison est accessible à l'adresse `192.168.1.30:3000`, vous devez remplacer `<IP Home Server Maison>` par `http://192.168.1.30:3000` dans le fichier `routes/web.php`.
 
+### Lancer Finance dashboard
+
 - Lancer le serveur
 
   ```bash
@@ -85,6 +89,30 @@ Pour installer **Finance dashboard** sur votre serveur, vous devez avoir les pr�
   - Notez qu'en suivant ces instructions, vous aurez accès à **Finance dashboard** uniquement si vous êtes connecté au même réseau que votre serveur. Si vous voulez accéder à **Finance dashboard** depuis un autre réseau, vous devrez configurer votre serveur pour qu'il soit accessible depuis l'extérieur. Mais **ATTENTION** je ne recommande pas de le faire si vous n'avez pas les compétences, car cela peut poser des problèmes de sécurité.
 
 ### Installation seule
+
+- [Installer Finance dashboard]()
+- Copier le fichier `.env.example` dans le fichier `.env`
+- Vous pouvez modifier le nom de la base de données si vous le souhaitez, mais ce n'est pas obligatoire. Par défaut, le nom de la base de données est `finance_dashboard`.
+  - Vous pouvez modifier le nom de la base de données, le nom d'utilisateur et le mot de passe dans le fichier `.env` pour s'adapter à votre configuration. Si vous avez laissé les valeurs par défaut lors de l'installation de XAMPP, vous n'avez pas besoin de modifier le fichier `.env`.
+- Créer les base de données
+
+  ```bash
+  php artisan migrate
+  ```
+
+- Modifier le fichier `routes/web.php` pour remplacer <IP Home Server Maison> pour l'adresse IP et le port de votre serveur Home Server Maison
+  - Par exemple, si votre serveur Home Server Maison est accessible à l'adresse `192.168.1.30:3000`, vous devez remplacer `<IP Home Server Maison>` par `http://192.168.1.30:3000` dans le fichier `routes/web.php`.
+
+### Lancer Finance dashboard seul
+
+- Lancer le serveur
+
+  ```bash
+  php artisan serve --host=0.0.0.0 --port=2000
+  ```
+
+- Vous pouvez maintenant accéder à l'application à l'adresse `http://<IP Serveur>:2000` (remplacer `<IP Serveur>` par l'adresse IP de votre serveur sur lequel vous avez installé **Finance dashboard**).
+  - Notez qu'en suivant ces instructions, vous aurez accès à **Finance dashboard** uniquement si vous êtes connecté au même réseau que votre serveur. Si vous voulez accéder à **Finance dashboard** depuis un autre réseau, vous devrez configurer votre serveur pour qu'il soit accessible depuis l'extérieur. Mais **ATTENTION** je ne recommande pas de le faire si vous n'avez pas les compétences, car cela peut poser des problèmes de sécurité.
 
 ## Autheur
 
