@@ -6,6 +6,13 @@
   - [Table des matières](#table-des-matières)
   - [Présentation](#présentation)
   - [Fonctionnalités](#fonctionnalités)
+  - [Images](#images)
+    - [Format mobile](#format-mobile)
+      - [Page du Home Serveur Maison en format mobile (en cas d'installation complète de l'écosystème)](#page-du-home-serveur-maison-en-format-mobile-en-cas-dinstallation-complète-de-lécosystème)
+      - [Page du Finance dashboard en format mobile](#page-du-finance-dashboard-en-format-mobile)
+    - [Format ordinateur](#format-ordinateur)
+      - [Page du Home Serveur Maison en format desktop (en cas d'installation complète de l'écosystème)](#page-du-home-serveur-maison-en-format-desktop-en-cas-dinstallation-complète-de-lécosystème)
+      - [Page du Finance dashboard en format desktop](#page-du-finance-dashboard-en-format-desktop)
   - [Technologies utilisées](#technologies-utilisées)
   - [Installation](#installation)
     - [Prérequis](#prérequis)
@@ -42,6 +49,68 @@ Finance dashboard à été conçue pour être utilisé par plusieurs personnes, 
 
 **Finance dashboard** est une application web open-source, elle est donc gratuite et libre d'utilisation. Vous pouvez l'utiliser, la modifier, la distribuer, la partager, etc. comme bon vous semble. Par contre, vous ne pouvez pas la vendre, ni la commercialiser, ni la distribuer sans en donner l'accès gratuit.
 
+## Images
+
+### Format mobile
+
+#### Page du Home Serveur Maison en format mobile (en cas d'installation complète de l'écosystème)
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="./documentation/img/mobile/connexion.png" alt="" width="45%" style="display: block; margin-left: auto; margin-right: auto;" border="1" />
+  <img src="./documentation/img/mobile/connexion_password.png" alt="" width="45%" style="display: block; margin-left: auto; margin-right: auto;" border="1" />
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="./documentation/img/mobile/home_accueil.png" alt="" width="45%" style="display: block; margin-left: auto; margin-right: auto;" border="1" />
+  <img src="./documentation/img/mobile/profil.png" alt="" width="45%" style="display: block; margin-left: auto; margin-right: auto;" border="1" />
+</div>
+
+#### Page du Finance dashboard en format mobile
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="./documentation/img/mobile/finance_dashboard.png" alt="" width="45%" style="display: block; margin-left: auto; margin-right: auto;" border="1" />
+  <img src="./documentation/img/mobile/crypto.png" alt="" width="45%" style="display: block; margin-left: auto; margin-right: auto;" border="1" />
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="./documentation/img/mobile/revenue.png" alt="" width="45%" style="display: block; margin-left: auto; margin-right: auto;" border="1" />
+  <img src="./documentation/img/mobile/revenu_delete.png" alt="" width="45%" style="display: block; margin-left: auto; margin-right: auto;" border="1" />
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="./documentation/img/mobile/abonnement.png" alt="" width="45%" style="display: block; margin-left: auto; margin-right: auto;" border="1" />
+</div>
+
+### Format ordinateur
+
+#### Page du Home Serveur Maison en format desktop (en cas d'installation complète de l'écosystème)
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="./documentation/img/desktop/connexion.png" alt="" width="45%" style="display: block; margin-left: auto; margin-right: auto;" border="1" />
+  <img src="./documentation/img/desktop/connexion_password.png" alt="" width="45%" style="display: block; margin-left: auto; margin-right: auto;" border="1" />
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="./documentation/img/desktop/home_accueil.png" alt="" width="45%" style="display: block; margin-left: auto; margin-right: auto;" border="1" />
+  <img src="./documentation/img/desktop/profil.png" alt="" width="45%" style="display: block; margin-left: auto; margin-right: auto;" border="1" />
+</div>
+
+#### Page du Finance dashboard en format desktop
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="./documentation/img/desktop/finance_dashboard.png" alt="" width="45%" style="display: block; margin-left: auto; margin-right: auto;" border="1" />
+  <img src="./documentation/img/desktop/crypto.png" alt="" width="45%" style="display: block; margin-left: auto; margin-right: auto;" border="1" />
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="./documentation/img/desktop/revenue.png" alt="" width="45%" style="display: block; margin-left: auto; margin-right: auto;" border="1" />
+  <img src="./documentation/img/desktop/revenu_delete.png" alt="" width="45%" style="display: block; margin-left: auto; margin-right: auto;" border="1" />
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+  <img src="./documentation/img/desktop/abonnement.png" alt="" width="45%" style="display: block; margin-left: auto; margin-right: auto;" border="1" />
+</div>
+
 ## Technologies utilisées
 
 **Finance dashboard** est une application web développée avec les technologies suivantes :
@@ -62,9 +131,9 @@ Finance dashboard à été conçue pour être utilisé par plusieurs personnes, 
 Pour installer **Finance dashboard** sur votre serveur, vous avez deux options :
 
 1. [L'installé avec son écosystème complet](#installation-complète)
-  - Finance dashboard à été conçu pour être intégré à un autre projet qui s'appelle **[Home Server Maison](https://github.com/FloRobart/HomeServerMaison)** qui gère tout le système de gestion de compte utilisateur et de connexion, ainsi qu'une page d'accueil qui regroupe toutes les applications qui sont installées sur le serveur. Si vous voulez installer **Finance dashboard** avec son écosystème complet, vous devez dabord installer **[Home Server Maison](https://github.com/FloRobart/HomeServerMaison)** et ensuite suivre les instructions d'installation de **Finance dashboard**.
+    - Finance dashboard à été conçu pour être intégré à un autre projet qui s'appelle **[Home Server Maison](https://github.com/FloRobart/HomeServerMaison)** qui gère tout le système de gestion de compte utilisateur et de connexion, ainsi qu'une page d'accueil qui regroupe toutes les applications qui sont installées sur le serveur. Si vous voulez installer **Finance dashboard** avec son écosystème complet, vous devez dabord installer **[Home Server Maison](https://github.com/FloRobart/HomeServerMaison)** et ensuite suivre les instructions d'installation de **Finance dashboard**.
 2. [L'installé seul](#installation-seule)
-  - J'ai également prévu une version de **Finance dashboard** qui peut être installée seule, sans **[Home Server Maison](https://github.com/FloRobart/HomeServerMaison)**. Si vous installez la version autonome de **Finance dashboard**, vous devrez quand même créer un compte utilisateur pour pouvoir vous connecter à l'application.
+    - J'ai également prévu une version de **Finance dashboard** qui peut être installée seule, sans **[Home Server Maison](https://github.com/FloRobart/HomeServerMaison)**. Si vous installez la version autonome de **Finance dashboard**, vous devrez quand même créer un compte utilisateur pour pouvoir vous connecter à l'application.
 
 ### Prérequis
 
